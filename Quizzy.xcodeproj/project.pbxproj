@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		345835BB1D1B60D10099CCC9 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		345835BB1D1B60D10099CCC9 /* Quizzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		345835BE1D1B60D10099CCC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		345835C01D1B60D10099CCC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		345835C31D1B60D10099CCC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		345835BC1D1B60D10099CCC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				345835BB1D1B60D10099CCC9 /* Quiz.app */,
+				345835BB1D1B60D10099CCC9 /* Quizzy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		345835BA1D1B60D10099CCC9 /* Quiz */ = {
+		345835BA1D1B60D10099CCC9 /* Quizzy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 345835CD1D1B60D10099CCC9 /* Build configuration list for PBXNativeTarget "Quiz" */;
+			buildConfigurationList = 345835CD1D1B60D10099CCC9 /* Build configuration list for PBXNativeTarget "Quizzy" */;
 			buildPhases = (
 				345835B71D1B60D10099CCC9 /* Sources */,
 				345835B81D1B60D10099CCC9 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = Quiz;
+			name = Quizzy;
 			productName = Quiz;
-			productReference = 345835BB1D1B60D10099CCC9 /* Quiz.app */;
+			productReference = 345835BB1D1B60D10099CCC9 /* Quizzy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 345835B61D1B60D00099CCC9 /* Build configuration list for PBXProject "Quiz" */;
+			buildConfigurationList = 345835B61D1B60D00099CCC9 /* Build configuration list for PBXProject "Quizzy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				345835BA1D1B60D10099CCC9 /* Quiz */,
+				345835BA1D1B60D10099CCC9 /* Quizzy */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +256,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Overwatchfriends.Quiz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quizzy;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -271,7 +271,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Overwatchfriends.Quiz;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Quizzy;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -279,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		345835B61D1B60D00099CCC9 /* Build configuration list for PBXProject "Quiz" */ = {
+		345835B61D1B60D00099CCC9 /* Build configuration list for PBXProject "Quizzy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				345835CB1D1B60D10099CCC9 /* Debug */,
@@ -288,7 +288,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		345835CD1D1B60D10099CCC9 /* Build configuration list for PBXNativeTarget "Quiz" */ = {
+		345835CD1D1B60D10099CCC9 /* Build configuration list for PBXNativeTarget "Quizzy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				345835CE1D1B60D10099CCC9 /* Debug */,

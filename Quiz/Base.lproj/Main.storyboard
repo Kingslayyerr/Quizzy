@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quizzy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -43,10 +43,18 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgA-HG-cGM"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbi-DW-jm9">
+                                <rect key="frame" x="279" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gbi-DW-jm9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6eW-xZ-1dt"/>
                             <constraint firstItem="UNK-xk-mAf" firstAttribute="top" secondItem="I1o-1l-bZr" secondAttribute="bottom" constant="132" id="B2c-L4-PdI"/>
+                            <constraint firstItem="gbi-DW-jm9" firstAttribute="top" secondItem="dGk-f3-vYg" secondAttribute="top" id="BDi-Ke-ufy"/>
                             <constraint firstItem="dYI-Dt-nm3" firstAttribute="top" secondItem="UNK-xk-mAf" secondAttribute="bottom" constant="123" id="DIM-3n-luX"/>
                             <constraint firstItem="dGk-f3-vYg" firstAttribute="centerX" secondItem="I1o-1l-bZr" secondAttribute="centerX" id="F4C-kY-aSq"/>
                             <constraint firstItem="dGk-f3-vYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JRz-IX-nKV"/>
@@ -58,7 +66,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="UNK-xk-mAf" id="i8S-Hm-cN7"/>
-                        <outlet property="questionLabel" destination="dGk-f3-vYg" id="crQ-JV-Xey"/>
+                        <outlet property="currentQuestionLabel" destination="dGk-f3-vYg" id="qdp-MT-S2b"/>
+                        <outlet property="nextQuestionLabel" destination="gbi-DW-jm9" id="nUj-dY-NPu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

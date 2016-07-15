@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var questionLabel: UILabel!
+    
+    // Update outlets to have two labels instead of one.
+    
+    @IBOutlet var currentQuestionLabel: UILabel!
+    @IBOutlet var currentQuestionLabelCenterXConstraint: NSLayoutConstraint!
+    
+    
+    @IBOutlet var nextQuestionLabel: UILabel!
+    @IBOutlet var nextQuestionLabelXConstraint: NSLayoutConstraint!
+    
+    
     @IBOutlet var answerLabel: UILabel!
     
     let questions: [String] = ["What is Christian's favortie movie?",
@@ -35,7 +45,7 @@ class ViewController: UIViewController {
         }
         
         let question: String = questions[currentQuestionIndex]
-        questionLabel.text = question
+        nextQuestionLabel.text = question
         answerLabel.text = "???"
         
         //HERE WE CALL THE CLOSURE WE DEFINED FOR ANIMATION WHEN THE USER CLICKS ON THE NEXT BUTTON
@@ -53,7 +63,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = questions[currentQuestionIndex]
+        currentQuestionLabel.text = questions[currentQuestionIndex]
     }
     
     //OVERRIDE viewWillAppear to set the alpha to 0, this will make the animation visible.
@@ -63,7 +73,7 @@ class ViewController: UIViewController {
         
         // Set labels initial alpha
         
-        questionLabel.alpha = 0
+        nextQuestionLabel.alpha = 0
         
         }
     
@@ -80,10 +90,23 @@ class ViewController: UIViewController {
         
         //ANIMATE THE alpha
         
-        UIView.animateWithDuration(0.5, animations: {
-            self.questionLabel.alpha = 1
-        })
+       // UIView.animateWithDuration(0.5, animations: {
+        //    self.currentQuestionLabel.alpha = 0
+        //    self.nextQuestionLabel.alpha = 1
+        // })
         
+        
+        UIView.animateWithDuration(0.5,
+            delay: 0,
+            options:[],
+            animations: {
+            self.currentQuestionLabel.alpha = 0
+            self.nextQuestionLabel.alpha = 1
+            }, completion: { _ in
+                swap(&self.currentQuestionLabel,
+                &self.nextQuestionLabel)
+                
+        })
         
     }
     
